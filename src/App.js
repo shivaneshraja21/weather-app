@@ -7,7 +7,6 @@ function App() {
   const [enteredvalue, setenteredvalue] = useState("");
 
   function handleInput(eve) {
-    // console.log(eve.target.value);
     setenteredvalue(eve.target.value);
   }
 
@@ -26,27 +25,32 @@ function App() {
     <div className="flex flex-row justify-center h-[100vh] items-center">
       <div
         style={{
-          backgroundImage: "linear-gradient(120deg, #a6c0fe 0%, #f68084 100%)",
+          backgroundImage:
+            "linear-gradient(to right, #ec77ab 0%, #7873f5 100%)",
         }}
-        className="p-2 rounded-md shadow"
+        className="text-xl rounded-3xl shadow p-5"
       >
-        <h2 className="font-medium">Hey! ⛅</h2>
-        <p>Do you want to know the weather report :)</p>
+        <h2 className="font-medium text-2xl">Hey! ⛅</h2>
+        <p className="text-xl pb-2">
+          Do you want to know the weather report :)
+        </p>
         <input
           onChange={handleInput}
           type="text"
-          className="rounded-md h-6 mt-2 p-2 text-sm outline-none"
+          className="rounded-md h-6 mt-2 p-4 text-xl outline-none"
           placeholder="City Name.."
         />
         <br></br>
         <button
           onClick={getData}
-          className="bg-black text-white rounded-lg p-1 mt-2 text-xs"
+          className="bg-black text-white rounded-lg p-2 mt-2 text-sm"
         >
           Get report ⚡
         </button>
-        <p className="text-xs mt-2">
-          Degree: {deg} | City: {city} | Weather: {desc}
+        <p className="text-xl mt-2">
+          Degree: {deg} <br></br>
+          City: {city} <br></br>
+          Weather: {desc} <br></br>
         </p>
       </div>
     </div>
