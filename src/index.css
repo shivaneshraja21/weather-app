@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 body{
-  background-color: #b397d6;
+  background-color: #5dbed6f6;
 }
 
 .shadow{
-  box-shadow: 15px 13px 268px 92px rgba(105,67,133,0.75);
--webkit-box-shadow: 15px 13px 268px 92px rgba(105,67,133,0.75);
--moz-box-shadow: 15px 13px 268px 92px rgba(105,67,133,0.75);
+  box-shadow: -64px -20px 168px 13px rgba(245,240,240,0.62);
+  -webkit-box-shadow: -64px -20px 168px 13px rgba(245,240,240,0.62);
+  -moz-box-shadow: -64px -20px 168px 13px rgba(245,240,240,0.62);
 }
